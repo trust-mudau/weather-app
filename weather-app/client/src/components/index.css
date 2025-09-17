@@ -1,0 +1,7 @@
+/* If not using Tailwind's build process, import the generated CSS instead */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css');
+
+body {
+  /* Use Tailwind utility classes directly in your HTML, not with @apply in CSS */
+  font-family: 'Inter', sans-serif;
+}

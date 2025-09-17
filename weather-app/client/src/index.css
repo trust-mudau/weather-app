@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 text-gray-900;
+  font-family: 'Inter', sans-serif;
+}
