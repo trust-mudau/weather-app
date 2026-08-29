@@ -12,8 +12,8 @@ import {
 const HourlyChart = ({ hourly }) => {
   if (!hourly) return null;
 
-  const data = hourly.time.map((t, i) => ({
-    time: new Date(t).getHours() + ":00",
+  const data = hourly.time.slice(0, 24).map((t, i) => ({
+    time: t.slice(11, 16),
     temp: hourly.temperature_2m[i],
   }));
 
